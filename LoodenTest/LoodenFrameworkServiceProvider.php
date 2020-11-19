@@ -3,21 +3,21 @@
 namespace Looden\Framework;
 
 use Illuminate\Support\ServiceProvider;
-use Looden\Framework\Console\Commands\DummyData;
-use Looden\Framework\Console\Commands\ModelReader;
-use Looden\Framework\Console\Commands\TokenGenerator;
+//use Looden\Framework\Console\Commands\DummyData;
+//use Looden\Framework\Console\Commands\ModelReader;
+//use Looden\Framework\Console\Commands\TokenGenerator;
 
 class LoodenFrameworkServiceProvider extends ServiceProvider {
 
     protected $commands = [
-        ModelReader::class,
-        TokenGenerator::class
+//        ModelReader::class,
+//        TokenGenerator::class
     ];
     public function boot()
     {
-        $this->publishes([__DIR__.'/database/migrations/' => database_path('migrations')], 'looden-migrations');
-        $this->publishes([__DIR__.'/config/looden.php' => config_path('looden.php')], 'looden-config');
-        $this->loadRoutesFrom(__DIR__.'/routes/api-routes.php');
+//        $this->publishes([__DIR__.'/database/migrations/' => database_path('migrations')], 'looden-migrations');
+//        $this->publishes([__DIR__.'/config/looden.php' => config_path('looden.php')], 'looden-config');
+//        $this->loadRoutesFrom(__DIR__.'/routes/api-routes.php');
     }
     public function register()
     {
